@@ -7,10 +7,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .roadmap-item .info-card { flex: 1; }
-        .school-logo { width: 140px; height: 140px; }
-        .edu-meta { font-size: 1.6rem; }
-        .edu-header h3 { font-size: 5rem; line-height: 1.05; margin: 0; letter-spacing: -1px; }
+        .edu-list {
+            padding: 2rem 18% 8rem 18%;
+        }
+        .edu-entry {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+        .edu-entry img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+        .edu-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        .edu-year {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #FF4F00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        .edu-school {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #FDFCF8;
+            margin: 0;
+        }
+        .edu-line {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #FDFCF8;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -27,51 +64,35 @@
         </nav>
     </header>
 
-    <main class="roadmap-container">
+    <main class="edu-list">
         <h2 class="section-title">Educational Roadmap</h2>
 
-        <div class="roadmap-item">
-            <div class="roadmap-dot"></div>
-            <div class="info-card">
-                <div class="edu-header">
-                    <img src="washu_logo.png" alt="WashU Logo" class="school-logo">
-                    <div>
-                        <p class="edu-meta">2023 – 2027</p>
-                        <h3>Washington University in St. Louis</h3>
-                    </div>
-                </div>
-                <p class="edu-degree">B.S. Biomedical Engineering</p>
-                <p class="edu-details">Minors in Biomedical Data Science & Business Strategy.</p>
+        <div class="edu-entry">
+            <img src="washu_logo.png" alt="WashU Logo">
+            <div class="edu-text">
+                <p class="edu-year">2023 – 2027</p>
+                <p class="edu-school">Washington University in St. Louis</p>
+                <p class="edu-line">B.S. Biomedical Engineering</p>
+                <p class="edu-line">Minors in Biomedical Data Science & Business Strategy</p>
             </div>
         </div>
 
-        <div class="roadmap-item">
-            <div class="roadmap-dot"></div>
-            <div class="info-card">
-                <div class="edu-header">
-                    <img src="pennstate_logo.png" alt="Penn State Logo" class="school-logo">
-                    <div>
-                        <p class="edu-meta">May 2025 – Aug 2025</p>
-                        <h3>Penn State University</h3>
-                    </div>
-                </div>
-                <p class="edu-degree">Research Internship @ BASiL</p>
-                <p class="edu-details">High-frame-rate Doppler ultrasound for deep vein thrombosis delineation.</p>
+        <div class="edu-entry">
+            <img src="pennstate_logo.png" alt="Penn State Logo">
+            <div class="edu-text">
+                <p class="edu-year">May 2025 – Aug 2025</p>
+                <p class="edu-school">Penn State University</p>
+                <p class="edu-line">Research Internship @ BASiL</p>
+                <p class="edu-line">High-frame-rate Doppler ultrasound for deep vein thrombosis delineation</p>
             </div>
         </div>
 
-        <div class="roadmap-item">
-            <div class="roadmap-dot"></div>
-            <div class="info-card">
-                <div class="edu-header">
-                    <img src="rdfz_logo.png" alt="RDFZ Logo" class="school-logo">
-                    <div>
-                        <p class="edu-meta">2020 – 2023</p>
-                        <h3>The High School Affiliated to Renmin University of China (RDFZ)</h3>
-                    </div>
-                </div>
-                <p class="edu-degree">High School Diploma</p>
-                <p class="edu-details">Filed two patents for solar-powered PEM electrolyzers.</p>
+        <div class="edu-entry">
+            <img src="rdfz_logo.png" alt="RDFZ Logo">
+            <div class="edu-text">
+                <p class="edu-year">2020 – 2023</p>
+                <p class="edu-school">The High School Affiliated to Renmin University of China (RDFZ)</p>
+                <p class="edu-line">High School Diploma</p>
             </div>
         </div>
     </main>
