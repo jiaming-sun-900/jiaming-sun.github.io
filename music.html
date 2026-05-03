@@ -97,15 +97,9 @@
 
         /* Performances */
         .video-grid {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .video-item {
-            flex: 1;
-            min-width: 260px;
-            max-width: 420px;
         }
 
         .video-item a {
@@ -115,13 +109,36 @@
 
         .video-thumb {
             width: 100%;
+            aspect-ratio: 16 / 9;
             border-radius: 8px;
             display: block;
+            object-fit: cover;
             transition: opacity 0.2s;
         }
 
-        .video-item a:hover .video-thumb {
+        .video-item a:hover .video-thumb,
+        .video-item a:hover .bili-placeholder {
             opacity: 0.8;
+        }
+
+        .bili-placeholder {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 8px;
+            background: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            transition: opacity 0.2s;
+        }
+
+        .bili-placeholder span {
+            font-size: 1.2rem;
+            color: rgba(253, 252, 248, 0.5);
+            font-family: 'Libre Baskerville', serif;
+            line-height: 1.5;
         }
 
         .video-title {
@@ -201,13 +218,13 @@
                     </div>
                     <div class="video-item">
                         <a href="https://www.bilibili.com/video/BV1JwdUBrEuv/" target="_blank">
-                            <iframe class="video-thumb" src="https://player.bilibili.com/player.html?bvid=BV1JwdUBrEuv" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen style="width:100%; aspect-ratio:16/9; border-radius:8px;"></iframe>
+                            <div class="bili-placeholder"><span>将进酒 — Live at WashU Spring Ensemble Concert, 2026.04.19</span></div>
                         </a>
                         <p class="video-title">将进酒 — Live at WashU Spring Ensemble Concert, 2026.04.19</p>
                     </div>
                     <div class="video-item">
                         <a href="https://www.bilibili.com/video/BV1Ah91BMEf9/" target="_blank">
-                            <iframe class="video-thumb" src="https://player.bilibili.com/player.html?bvid=BV1Ah91BMEf9" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen style="width:100%; aspect-ratio:16/9; border-radius:8px;"></iframe>
+                            <div class="bili-placeholder"><span>The Last Live of the Half-Body Harp, 2026.04.26</span></div>
                         </a>
                         <p class="video-title">The Last Live of the Half-Body Harp, 2026.04.26</p>
                     </div>
