@@ -40,11 +40,9 @@ Font: **Libre Baskerville** (serif), loaded from Google Fonts.
 
 ## Work in Progress
 
-`research.html`, `experience.html`, and `music.html` are incomplete drafts that are intentionally not being worked on right now. They may have inconsistent nav structures, missing font imports, and placeholder content. Do not treat these as errors or attempt to fix them unless explicitly asked. Only `index.html` and `education.html` are actively maintained.
+`research.html` and `music.html` are incomplete drafts that are intentionally not being worked on right now. They may have inconsistent nav structures, missing font imports, and placeholder content. Do not treat these as errors or attempt to fix them unless explicitly asked. Only `index.html` and `education.html` are actively maintained.
 
 ## Known Inconsistencies
 
-- **Two nav structures coexist**: `index.html` and `education.html` use a flat `<nav>` with `.nav-left` / `.nav-right` divs. `research.html`, `experience.html`, and `music.html` use a hamburger-style nav with `.nav-logo`, `.nav-hamburger`, and `<ul class="nav-links">` — but the hamburger toggle JS is not implemented in `script.js`.
-- **Google Fonts missing on inner pages**: `research.html`, `experience.html`, and `music.html` do not include the Google Fonts `<link>` tag, unlike `index.html` and `education.html`.
-- **`music.html` has placeholder content**: The album grid and guitar grid sections contain template placeholder text intended to be replaced with real content.
-- **`music.html` nav links to `about.html`**, which does not exist in the repository.
+- **Google Fonts missing on inner pages**: `research.html` does not include the Google Fonts `<link>` tag, unlike `index.html`, `education.html`, and `music.html`.
+- **`music.html` Guitars tab**: The Guitars panel contains placeholder text.
